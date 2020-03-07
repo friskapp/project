@@ -13,4 +13,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::post('/{method}', 'Api\ApiController')->middleware('frisk-api');
+Route::post('/{method}', \Frisk\Http\Controllers\Api\ApiController::class);
