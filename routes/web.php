@@ -15,9 +15,28 @@ use Illuminate\Support\Facades\Auth;
 
 
 //auth + user
-Auth::routes(['verify' => true]);
+Route::get('login', [\Frisk\Http\Controllers\Auth\LoginController::class, 'showLoginForm'])->name('login');
+Route::post('login', [\Frisk\Http\Controllers\Auth\LoginController::class, 'login']);
+Route::post('logout', [\Frisk\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
+
+
+Route::get('password/reset', [\Frisk\Http\Controllers\Auth\ForgotPasswordController::class, 'showLinkRequestForm'])->name('password.request');
+Route::post('password/email', [\Frisk\Http\Controllers\Auth\ForgotPasswordController::class, 'sendResetLinkEmail'])->name('password.email');
+Route::get('password/reset/{token}', [\Frisk\Http\Controllers\Auth\ResetPasswordController::class, 'showResetForm'])->name('password.reset');
+Route::post('password/reset', [\Frisk\Http\Controllers\Auth\ResetPasswordController::class, 'reset'])->name('password.update');
+
+Route::get('password/confirm', [\Frisk\Http\Controllers\Auth\ConfirmPasswordController::class, 'showConfirmForm'])->name('password.confirm');
+Route::post('password/confirm', [\Frisk\Http\Controllers\Auth\ConfirmPasswordController::class, 'confirm']);
+
+
+Route::get('email/verify', [\Frisk\Http\Controllers\Auth\VerificationController::class, 'show'])->name('verification.notice');
+Route::get('email/verify/{id}/{hash}', [\Frisk\Http\Controllers\Auth\VerificationController::class, 'verify'])->name('verification.verify');
+Route::post('email/resend', [\Frisk\Http\Controllers\Auth\VerificationController::class, 'resend'])->name('verification.resend');
+
+
 Route::get('invitation/{invitation}', [\Frisk\Http\Controllers\Auth\RegisterController::class, 'invitation'])->name('invitation');
-Route::post('register/{invitation}', [\Frisk\Http\Controllers\Auth\RegisterController::class, 'register'])->name('frisk-register');
+// Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
+Route::post('register/{invitation}', [\Frisk\Http\Controllers\Auth\RegisterController::class, 'register'])->name('register');
 Route::get('/account', \Frisk\Http\Controllers\User\AccountViewController::class)->middleware('auth')->name('account_view');
 Route::post('/account', \Frisk\Http\Controllers\User\AccountUpdateController::class)->middleware('auth')->name('account_update');
 
