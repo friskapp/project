@@ -3,7 +3,7 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use Faker\Generator as Faker;
-use Frisk\Project;
+use Frisk\Models\Project;
 use Illuminate\Support\Str;
 
 $factory->define(Project::class, function (Faker $faker) {

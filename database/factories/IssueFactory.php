@@ -3,7 +3,7 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use Faker\Generator as Faker;
-use Frisk\Issue;
+use Frisk\Models\Issue;
 use Frisk\Utils\IdentifierGenerator;
 use Illuminate\Database\QueryException;
 use Symfony\Component\Debug\Exception\FatalThrowableError;
