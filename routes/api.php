@@ -1,4 +1,6 @@
 <?php
+
+use Frisk\Frisk;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::post('/{method}', \Frisk\Http\Controllers\Api\ApiController::class);
+Frisk::routes('api');
