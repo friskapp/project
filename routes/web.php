@@ -1,8 +1,6 @@
 <?php
 
 use Frisk\Frisk;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------

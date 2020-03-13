@@ -1,7 +1,6 @@
 <?php
 
 use Frisk\Frisk;
-use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
