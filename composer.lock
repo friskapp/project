@@ -12,7 +12,7 @@
             "dist": {
                 "type": "path",
                 "url": "../frisk",
-                "reference": "c62c132ad124ba1b6bbd96ccc67c42a38ac70c9f"
+                "reference": "d46ae48f7173d4530e05fdc55d21f64d44dafc64"
             },
             "require": {
                 "awssat/discord-notification-channel": "^1.0",
