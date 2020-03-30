@@ -1,7 +1,5 @@
 <?php
 
-use Frisk\Frisk;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,5 +10,3 @@ use Frisk\Frisk;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Frisk::routes();
