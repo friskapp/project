@@ -1,7 +1,5 @@
 <?php
 
-use Frisk\Frisk;
-
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -12,6 +10,3 @@ use Frisk\Frisk;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
-
-Frisk::routes('api');
