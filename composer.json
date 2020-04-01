@@ -3,26 +3,23 @@
     "type": "project",
     "description": "Frisk Project",
     "keywords": [
-        "framework",
-        "laravel"
+        "frisk",
+        "awssat",
+        "friskapp"
     ],
-    "license": "MIT",
     "repositories": [
         {
-            "type": "path",
-            "url": "../frisk",
-            "options": {
-                "symlink": true
-            }
+            "type": "composer",
+            "url": "https://satis.frisk.app"
         }
     ],
     "require": {
-        "php": "^7.2.5",
+        "php": "^7.3",
         "fideloper/proxy": "^4.2",
         "guzzlehttp/guzzle": "^6.3",
         "laravel/framework": "^7.0",
         "laravel/tinker": "^2.0",
-        "frisk/app": "@dev"
+        "frisk/app": "^1.0"
     },
     "require-dev": {
         "facade/ignition": "^2.0",

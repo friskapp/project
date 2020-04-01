@@ -1,3 +1,6 @@
+
+![frisk.app](https://i.imgur.com/IFhQZz6l.png)
+
 [Frisk](https://frisk.app) is an affordable & privacy-focused **self-hosted** Laravel error tracking solution
 
 
@@ -11,4 +14,4 @@
 To be able to install this, you need a Frisk license that you can buy at frisk.app
 
 ## Docs
-Docs can be found at [Fris.app/docs](https://frisk.app/docs).
+Docs can be found at [frisk.app/docs](https://frisk.app/docs).
